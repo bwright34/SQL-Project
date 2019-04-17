@@ -62,7 +62,9 @@ WHERE First_name = "Groucho" AND last_name = "Williams";
 #4d. Perhaps we were too hasty in changing GROUCHO to HARPO. It turns out that GROUCHO was the correct name after all! In a single query,
 #if the first name of the actor is currently HARPO, change it to GROUCHO.
 
-
+UPDATE actor
+SET first_name = 'GROUCHO'
+WHERE first_name = 'HARPO'
 
 #5a. You cannot locate the schema of the address table. Which query would you use to re-create it?
 DESCRIBE sakila.address;
